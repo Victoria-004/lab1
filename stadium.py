@@ -4,9 +4,6 @@ class Stadium:
     __lightning = None
 
     def __init__(self, viewership, name, lightning):
-        """
-        Задання значень полів
-        """
         self.__viewership = viewership
         self.__name = name
         self.__lightning = lightning
@@ -18,23 +15,14 @@ class Stadium:
         return f"Stadium('{self.viewership}', '{self.name}', '{self.lightning}')"
 
     def set_data(self, viewership, name, lightning):
-        """
-        Встановлення значень
-        """
         self.name = name
         self.lightning = lightning
         self.viewership = viewership
 
     def get_data(self):
-        """
-        Виведення значень
-        """
         print("viewership:", self.__viewership, "name:", self.__name, "lightning:", self.__lightning)
 
     def __del__(self):
-        """
-        Деструктор класу
-        """
         print('Object is deleted')
 
 
