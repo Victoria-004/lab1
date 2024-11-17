@@ -5,14 +5,14 @@ b = 2
 h = 0.1
 d = 0.001
 
-def series_function(x, d): #функція обчислює суму ряду для заданого значення x з точністю до похибки d
-    total_sum = 0 #Змінна, що накопичує суму ряду
+def series_function(x, d): 
+    total_sum = 0
     k = 1
-    term = 1 #початкове знач члена ряду
+    term = 1
 
 
     while abs(term) > d:
-        term = (1 / (2 ** k)) * math.sin(x / (2 ** k))  #oбчислення чергового члена ряду
+        term = (1 / (2 ** k)) * math.sin(x / (2 ** k)) 
         total_sum += term
         k += 1
 
